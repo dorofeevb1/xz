@@ -1,0 +1,173 @@
+.services-container {
+    font-family:  "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .services h2 {
+    margin-bottom: 40px;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex-basis: calc(33.333% - 40px);
+    box-sizing: border-box;
+  }
+  
+  .service-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item .price {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  .request-form {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .request-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .request-form label {
+    margin-bottom: 10px;
+  }
+  
+  .request-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .request-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .faqs {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .faqs h2 {
+    margin-bottom: 40px;
+  }
+  
+  .faq-item {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: left;
+  }
+  
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #fff;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer a {
+    color: #ff9900;
+    text-decoration: none;
+  }
+  
+  .footer .btn {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,99 @@
+<div class="contacts-container">
+    <header class="header">
+     
+        <div class="logo">
+          <img src="/assets/image 1.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+          <a href="/">Главная</a>
+          <a href="/portfolio">Портфолио</a>
+          <a href="/services">Услуги</a>
+          <a href="/about">Обо мне</a>
+          <a href="/contacts">Контакты</a>
+        </ul>
+    
+    </header>
+  
+    <section class="contacts">
+        <div class="block">
+            <div style="padding-right: 100px;">
+                <h1 class="title" style="color: #000;">Контакты</h1>
+                <div class="contact-info">
+                    <p>Позвонить: {{ contacts.phone }}</p>
+                    <p style="align-items: center; display: flex;">
+                        <a style="padding-right: 5px;" href="#">{{ contacts.whatsapp }}</a>
+                        <img [src]='contacts.whatsappimg' [alt]="contacts.whatsapp">
+                </p>
+                    <p style="align-items: center; display: flex;">
+                        <a style="padding-right: 5px;" href="#">{{ contacts.telegram }}</a> 
+                        <img [src]='contacts.telegramimg' [alt]="contacts.telegram"></p>
+                </div>
+                <div class="social-media">
+                    <h2>Следите за мной в соц. сетях:</h2>
+                    <div class="social-icons">
+                        <div  *ngFor="let social of contacts.socialMedia">
+                            <button class="link" src="social.link">
+                                <img [src]="social.icon" [alt]="social.name">
+                                <p>{{ social.name }}</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn">Предложить проект</button>
+                  </div>
+            </div>      
+            <div class="contact-image">
+                <img [src]="contacts.image" alt="Olga">
+            </div>
+        </div>
+     
+    </section>
+  
+    <footer class="footer" style="display: flex;
+    justify-content: space-evenly;
+  ">
+        <div> 
+            <img src="/assets/image 4.png" alt="Logo">  
+            <p>&copy; 2024 Бюро. Все права защищены.</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <p>Хотите получить консультацию?</p>
+            <p>Форма обратной связи</p>
+            <input 
+            style="width: 360px;
+            padding:10px 5px;
+            border: none;
+            border-bottom: 1px solid #767676;
+            background-color: transparent;
+            color: inherit;
+            outline: none;" 
+            type="text" 
+            placeholder="Телефон:">
+            
+            <button routerLink="/contacts" class="btn" 
+            style="
+            background-color: #D89508; 
+            color: #fff;
+            border-radius: 50px;
+            width: 180px;
+            height: 61px;
+            top: 211px;
+            left: 530px;
+            
+            " >Бесплатно</button>
+        </div>
+        <div>
+            <p>+7 (999) 999-99-99</p>
+            <div>
+                <img src="assets/Group 5.png" alt="telegram">
+                <img src="assets/Group.png" alt="vk">
+            </div>
+        </div>
+   
+     
+     
+
+    </footer>
+  </div>
+  

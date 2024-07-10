@@ -1,0 +1,132 @@
+.about-container {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 48px;
+    color: #ff9900;
+    margin-right: 20px;
+  }
+  
+  .about-header img {
+    max-width: 300px;
+    border-radius: 50%;
+  }
+  
+  .about-content {
+    text-align: left;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h3 {
+    font-size: 24px;
+    color: #ff9900;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-content ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9900;
+    color: #101010;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer a {
+    color: #ff9900;
+    text-decoration: none;
+  }
+  
+  .footer .btn {
+    margin-top: 10px;
+  }
+  
