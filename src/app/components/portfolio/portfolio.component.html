@@ -1,0 +1,14 @@
+<div class="portfolio-container">
+
+  <section class="projects">
+    <h2>{{title}}</h2>
+    <div class="project-list">
+      <div *ngFor="let project of projects" class="project-item">
+        <img [src]="project.image" alt="{{ project.text }}">
+        <p>{{ project.text }}</p>
+      </div>
+    </div>
+  </section>
+
+
+</div>

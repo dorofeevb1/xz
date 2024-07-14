@@ -1,0 +1,184 @@
+.contacts-container {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 10px 0;
+    a{
+        padding-right: 48px;
+    }
+  }
+  
+  .title {
+    z-index: 2;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .title::after {
+    
+    content: '';
+    z-index: 1;
+    display: block;
+    width: 730px;
+    height: 26px;
+    background-color: #ffcc00;
+    position: absolute;
+    bottom: -5px; /* Adjusted to give space between text and background */
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contacts {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    .block{
+        display: flex;
+    }
+  }
+  
+  .contacts h1 {
+    font-size: 48px;
+    color: #ff9900;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    color: #ff9900;
+  }
+  
+  .contact-image {
+    margin-bottom: 30px;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .social-media {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .social-media h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    .link{
+        display: flex;
+        border: 1.47px solid;
+        border-color: #D89508;
+        background-color: #fff;
+        padding: 30px 84px;
+
+        cursor: pointer;
+        p{
+            width: 78px;
+            height: 22px;
+            top: 43.66px;
+            left: 429.07px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+    }
+  }
+  
+  .social-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  .buttons .btn {
+    width: 600px;
+    height: 70px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #cc7a00;
+  }
+  

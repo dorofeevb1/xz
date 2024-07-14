@@ -1,0 +1,34 @@
+<div class="about-container">
+  
+    <section class="about">
+        <div style="display: flex; ">
+            <div>
+                <img [src]="about.image" alt="{{ about.name }}">
+            </div>
+            <div>
+                <h1>{{ about.name }}</h1>
+                <h2>{{ about.title }}</h2>
+                <p>{{ about.description }}</p>
+                <p>{{about.text}}</p>
+            </div>
+        </div>
+
+        
+        <h3>Моя миссия</h3>
+        <ul>
+          <li *ngFor="let missionItem of about.mission">{{ missionItem }}</li>
+        </ul>
+        <h3>История</h3>
+        <p>{{ about.history }}</p>
+        <div class="buttons">
+          <button class="btn">Связаться со мной</button>
+          <button class="btn">Предложить проект</button>
+        </div>
+      </section>
+    
+      <footer class="footer">
+        <p>&copy; 2024 Бюро. Все права защищены.</p>
+        <p>Хотите получить консультацию? <a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+        <a routerLink="/contacts" class="btn">Бесплатно</a>
+      </footer>
+    </div>

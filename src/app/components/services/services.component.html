@@ -1,0 +1,40 @@
+<div class="services-container">
+  
+    <section class="services">
+      <h2>Услуги</h2>
+      <div class="service-list">
+        <div *ngFor="let service of services" class="service-item">
+          <img [src]="service.image" alt="{{ service.title }}">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <p class="price">{{ service.price }}</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="request-form">
+      <h2>Заполните заявку</h2>
+      <p>Чтобы получить персональные рекомендации по вашему объекту
+        и узнать о специальных ценах!</p>
+      <form>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="phone">Ваш номер телефона</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  
+    <section class="faqs">
+      <h2>Часто задаваемые вопросы</h2>
+      <div *ngFor="let faq of faqs" class="faq-item">
+        <button class="accordion">{{ faq.question }}</button>
+        <div class="panel">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  

@@ -1,0 +1,150 @@
+.home-container {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('/assets/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .projects, .services, .about, .reviews {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .projects h2, .services h2, .about h2, .reviews h2 {
+    margin-bottom: 40px;
+  }
+  
+  .project-list, .service-list, .review-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-item, .service-item, .review-item {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .footer {
+  padding: 40px 0 40px;
+  background-color: #222;
+  display: flex;
+  text-align: center;
+  }
+
+  .footer_conect{
+  padding-left: 130px;
+  }
+
+  .footer_conect-text{
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-top: 40px;
+  }
+
+  .footer_conect-text p{
+  margin: 0;
+  }
+
+  .p-text{
+  font-weight: 700;
+  font-size: 16px;
+  color: #8f8f8f;
+  }
+
+  .footer_conect-text input{
+    border: none;
+    background-color: #222;
+      display: block;
+      width: 380px;
+      border-bottom: 1px solid #767676;
+      padding: 27px 2px 8px 0;
+      margin-bottom: 27px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+  }
+
+  .footer a{
+    margin-top: 40px;
+  display: flex;
+  padding-left: 160px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  }
+
+  .footer_bottom{
+    display: block;
+    // position: absolute;
+  }
