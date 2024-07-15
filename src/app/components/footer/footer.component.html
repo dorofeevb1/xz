@@ -1,23 +1,26 @@
 <footer class="footer" style="display: flex;
         justify-content: space-evenly;
       ">
-  <div>
+  <div class="footer-logo">
     <img src="/assets/image 4.png" alt="Logo">
-    <p>&copy; 2024 Бюро. Все права защищены.</p>
+    <p>Copyright © 2021 - 2024 Бюро</p>
   </div>
-  <div style="display: flex; flex-direction: column;">
-    <p>Хотите получить консультацию?</p>
-    <p>Форма обратной связи</p>
+  <div class="footer-center" style="display: flex; flex-direction: column;">
+    <p class="text">Хотите получить консультацию?</p>
+    <p class="text-1">Форма обратной связи</p>
     <input style="width: 360px;
+                margin-top: 27px;
                 padding:10px 5px;
                 border: none;
                 border-bottom: 1px solid #767676;
                 background-color: transparent;
                 color: inherit;
-                outline: none;" type="text" placeholder="Телефон:">
+                outline: none;" placeholder="Телефон:" type="number">
+                
 
     <button routerLink="/contacts" class="btn" style="
                 background-color: #D89508; 
+                margin-top: 27px;
                 color: #fff;
                 border-radius: 50px;
                 width: 180px;
@@ -28,10 +31,14 @@
                 ">Бесплатно</button>
   </div>
   <div>
-    <p>+7 (999) 999-99-99</p>
-    <div>
+    <p class="number">+7 (999) 999-99-99</p>
+    <div class="footer-icon">
+      <a href="">
       <img src="assets/Group 5.png" alt="telegram">
+      </a>
+      <a href="">
       <img src="assets/Group.png" alt="vk">
+      </a>
     </div>
   </div>
 

@@ -5,11 +5,12 @@
             <div>
                 <img [src]="about.image" alt="{{ about.name }}">
             </div>
-            <div>
+            <div class="about-menu">
                 <h1>{{ about.name }}</h1>
+                <p class="text-1">{{ about.item }}</p>
                 <h2>{{ about.title }}</h2>
-                <p>{{ about.description }}</p>
-                <p>{{about.text}}</p>
+                <p class="text-2">{{ about.description }}</p>
+                <p class="text-3">{{about.text}}</p>
             </div>
         </div>
 
@@ -26,9 +27,4 @@
         </div>
       </section>
     
-      <footer class="footer">
-        <p>&copy; 2024 Бюро. Все права защищены.</p>
-        <p>Хотите получить консультацию? <a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
-        <a routerLink="/contacts" class="btn">Бесплатно</a>
-      </footer>
     </div>

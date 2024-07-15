@@ -1,11 +1,13 @@
 <div class="portfolio-container">
 
   <section class="projects">
-    <h2>{{title}}</h2>
+    <h1 class="title">{{title}}</h1>
     <div class="project-list">
-      <div *ngFor="let project of projects" class="project-item">
+      <div *ngFor="let project of projects" class="project-item"  (mouseenter)="showDescription[project.id] = true"
+     (mouseleave)="showDescription[project.id] = false">
         <img [src]="project.image" alt="{{ project.text }}">
-        <p>{{ project.text }}</p>
+        <p class="text">{{ project.text }}</p>
+        <p class="description" *ngIf="showDescription" class="description">{{ project.description }}</p>
       </div>
     </div>
   </section>

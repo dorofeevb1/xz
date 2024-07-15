@@ -43,16 +43,22 @@
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    height: 634px;
   }
   
   .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
   }
   
   .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
   }
   
   .hero p {
@@ -76,6 +82,10 @@
   
   .projects h2, .services h2, .about h2, .reviews h2 {
     margin-bottom: 40px;
+    font-weight: 600;
+      font-size: 48px;
+      text-align: center;
+      color: #252525;
   }
   
   .project-list, .service-list, .review-list {
@@ -86,7 +96,6 @@
   
   .project-item, .service-item, .review-item {
     flex: 1;
-    background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
   }

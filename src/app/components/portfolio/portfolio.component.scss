@@ -1,68 +1,56 @@
-.portfolio-container {
-    font-family:  "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
+.projects{
+  margin: 125px;
+.title {
+  font-weight: 600;
+  font-size: 48px;
+}
+.project-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+   
+    cursor: pointer;
+    img{
+    width: 580px;
+    height: 328px;
+    opacity: 1;
+    }
+    .text {
+      position: absolute;
+      bottom: 45px;
+      left: 25px;
+      font-weight: 600;
+        font-size: 18px;
+        color: #fff
+    }
   }
-  
-  .navbar {
+
+  .description {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-weight: 600;
+      font-size: 15px;
+      color: #969696;
+
+  }
+
+
+  .project-item:hover .description {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
   }
-  
-  .logo img {
-    height: 50px;
+  .project-item:hover img {
+    filter: brightness(40%);
   }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .projects {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .projects h2 {
-    margin-bottom: 40px;
-  }
-  
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  .project-item {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    flex-basis: calc(33.333% - 40px);
-    box-sizing: border-box;
-  }
-  
-  .project-item img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
+    .project-item:hover  .text{
+      color: #d89508;
+    }
+}
+
+
+
+
+
