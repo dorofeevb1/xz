@@ -1,0 +1,21 @@
+<div class="modal-container">
+    <div class="modal-content">
+      <button mat-icon-button class="close-button" (click)="onNoClick()">
+        <mat-icon>close</mat-icon>
+      </button>
+      <h3>Оставьте номер телефона</h3>
+      <p>и я свяжусь с вами в WhatsApp чтобы уточнить детали</p>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" >
+
+            <input formControlName="name" placeholder="Ваше имя" />
+            <input formControlName="phoneNumber" placeholder="Ваш номер телефона" />
+            <div class="config"> 
+                <input class="checkbox" type="checkbox" formControlName="consent">
+                 <p style=" margin: 0px;">Я согласен на обработку своих<u>персональных данных</u> </p>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+    </div>
+  </div>
+  

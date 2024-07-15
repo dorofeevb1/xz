@@ -16,15 +16,7 @@
       <h2>Заполните заявку</h2>
       <p>Чтобы получить персональные рекомендации по вашему объекту
         и узнать о специальных ценах!</p>
-      <form>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" name="name" required>
-  
-        <label for="phone">Ваш номер телефона</label>
-        <input type="tel" id="phone" name="phone" required>
-  
-        <button type="submit">Отправить</button>
-      </form>
+        <button (click)="openDialog()" mat-raise>ХОЧУ КОНСУЛЬТАЦИЮ БЕСПЛАТНО</button>
     </section>
   
     <section class="faqs">
