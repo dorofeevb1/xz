@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../../modal/modal.component';
+
 
 @Component({
   selector: 'app-services',
@@ -25,11 +28,21 @@ export class ServicesComponent implements OnInit, AfterViewInit {
     { question: 'Я не планирую выводить свою квартиру на продажу или аренду. Могу ли я заказать услуги хоумстейджинга для жизни?', answer: 'Да, многие из наших клиентов используют наши услуги для улучшения собственного проживания.' }
   ];
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
   }
+  openDialog(): void {
+    let dialogRef = this.dialog.open(ModalComponent, {
+    // width:"100%",
+ 
+    });
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      
+    });
+  }
   ngAfterViewInit(): void {
     const acc = document.getElementsByClassName("accordion");
     let i;

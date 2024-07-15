@@ -181,4 +181,48 @@
   .buttons .btn:hover {
     background-color: #cc7a00;
   }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    input{
+      width: 600px;
+      height: 57px;
+      border-radius: 25px;
+      border: #D89508 solid 1px;
+      margin-bottom: 6px;
+    }
+    .select{
+      width: 600px;
+      height: 57px;
+      border-radius: 25px;
+      border: #D89508 solid 1px;
+      background: #fff;
+      appearance: none; //-убираем стандартную стрелку
+      overflow: hidden;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background:url('/assets/arowe.png') no-repeat right 10px center;
+        background-size: 16px 16px;
+        padding-right: 30px; /* Adjust padding to prevent text overlap with arrow */
+        font-size: 16px;
+        padding: 10px;
+      }
+      
+      select:focus {
+        outline: none;
+        border-color: #f0ad4e; /* Цвет обводки при фокусе */
+      }
+      .file{
+        border: none;
+        display:none
+      }
+      button{
+        width: 600px;
+        height: 60px;
+        background: #D89508;
+        border-radius: 25px;
+        color: #fff;
+      }
+  }
   

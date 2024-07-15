@@ -1,0 +1,90 @@
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .modal-content {
+    position: relative;
+
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+  
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 0;  
+  }
+  
+  .close-button mat-icon {
+    font-size: 24px;
+    color: #D89508;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  mat-checkbox {
+    display: block;
+    margin-bottom: 20px;
+  }
+  input{
+    width: 420px;
+    height: 56px;
+    border: #D89508 solid 1px;
+    border-radius: 10px;
+   
+    margin-bottom: 6px;
+  }
+  button{
+    width: 420px;
+    height: 56px;
+    background-color: #D89508;
+    color: #fff;
+    border-radius: 5px;
+   
+  }
+  .mdc-label{
+    letter-spacing: 2%;
+  }
+  .config{
+    display: flex;
+    align-items: center;
+   
+    .checkbox{
+        width: 15px;
+      }
+  }
+ 
